@@ -8,7 +8,7 @@ data class Movie(
     val title: String,
     val overview: String,
 ) {
-    val posterImageUrl = "https://image.tmdb.org/t/p/w342/$posterPath"
+    val posterImageUrl = "https://image.tmdb.org/t/p/w342/$posterPath" // helps us to display the images nicely
     companion object {
         fun fromJsonArray(movieJsonArray: JSONArray): List<Movie> {
             val movies = mutableListOf<Movie>()

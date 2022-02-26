@@ -30,6 +30,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
 
     override fun getItemCount() = movies.size
 
+    // Display the poster, title, and overview on the screen
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         private val ivPoster = itemView.findViewById<ImageView>(R.id.ivPoster)
         private val tvTitle = itemView.findViewById<TextView>(R.id.tvTitle)
